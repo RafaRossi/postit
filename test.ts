@@ -18,4 +18,4 @@
 
 const student = new Student('Rafael', 24, true);
 
-console.log(student.studentFormattedData())
+console.log(student.studentFormattedData());
