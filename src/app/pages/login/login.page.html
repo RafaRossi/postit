@@ -1,0 +1,22 @@
+<div class="login">
+  <img class="background" src="assets/images/login_background.png" alt="">
+  <img class= "detail" src="assets/images/background.svg">
+
+  <div class="container">
+    <img src="assets/images/login_logo.svg">
+
+    <div class = "container--inputs">
+      <span>Email</span>
+      <input type="text" [(ngModel)]="loginPayload.email">
+      <span>Senha</span>
+      <input type="password" [(ngModel)]="loginPayload.password">
+    </div>
+
+    <ion-button [class.disabled]="!canLogin()" (click)="login()">
+      {{ isLoading ? 'carregando...' : 'confirmar'}}
+    <app-half-circle-spinner *ngIf="isLoading" [animationDuration]="1000" [size]="30" [color]="'#FFFFFF'"></app-half-circle-spinner>
+    </ion-button>
+
+    <p>Não possui conta? <a href="">Cadastre-se!</a> </p>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+img {
+  height: 35vh;
+  object-fit: cover;
+}
+
+.detail
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #FFFFFF;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  height: 75vh;
+  transform: translateY(-60px);
+
+  img {
+    width: 22%;
+    height: 30%;
+
+    @media (min-width: 1000px)
+    {
+      width: 10%;
+    }
+  }
+
+  span {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  input{
+    border: 1px solid #707070;
+    background-color: transparent;
+    outline: 0;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    padding: 0.95rem;
+    color: black;
+  }
+
+  &--inputs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  ion-button
+  {
+    --border-radius: 20px;
+    --background: #2D9FDB;
+    font-style: italic;
+    font-size: 0.8rem;
+    width: 80%;
+    height: 3rem;
+    margin-top: 2rem;
+
+    text-transform: capitalize;
+  }
+
+  p
+  {
+    color: #707070;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+
+    a{
+      color: #2D9FDB;
+      text-decoration: none;
+    }
+  }
+
+  .disabled
+  {
+    opacity: 0.5;
+    pointer-events: none;
+
+  }
+
+  app-half-circle-spinner
+  {
+    margin-left: 1rem;
+  }
+}

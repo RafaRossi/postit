@@ -1,0 +1,7 @@
+<svg id="Componente_24_1" data-name="Componente 24 – 1" xmlns="http://www.w3.org/2000/svg" width="326" height="79" viewBox="0 0 326 79">
+  <g id="Retângulo_217" data-name="Retângulo 217" transform="translate(0 23)" fill="#fff" stroke="#dbdbdb" stroke-width="1">
+    <rect width="326" height="56" rx="20" stroke="none"/>
+    <rect x="0.5" y="0.5" width="325" height="55" rx="19.5" fill="none"/>
+  </g>
+  <text id="Senha" transform="translate(17 13)" fill="#707070" font-size="14" font-family="Gotham-Medium, Gotham" font-weight="500"><tspan x="0" y="0">Senha</tspan></text>
+</svg>
