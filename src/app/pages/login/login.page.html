@@ -12,7 +12,7 @@
       <input type="password" [(ngModel)]="loginPayload.password">
     </div>
 
-    <ion-button [class.disabled]="!canLogin()" (click)="login()">
+    <ion-button class="button" [class.disabled]="!canLogin()" (click)="login()">
       {{ isLoading ? 'carregando...' : 'confirmar'}}
     <app-half-circle-spinner *ngIf="isLoading" [animationDuration]="1000" [size]="30" [color]="'#FFFFFF'"></app-half-circle-spinner>
     </ion-button>
