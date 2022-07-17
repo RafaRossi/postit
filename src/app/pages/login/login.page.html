@@ -3,13 +3,13 @@
   <img class= "detail" src="assets/images/background.svg">
 
   <div class="container">
-    <img src="assets/images/login_logo.svg">
+    <app-logo src ="assets/images/login_logo.svg" [full]=false (onClick)="logoClick($event)"></app-logo>
 
     <div class = "container--inputs">
       <span>Email</span>
-      <input type="text" [(ngModel)]="loginPayload.email">
+      <input (keydown.enter)="password.focus()" class="input" type="text" [(ngModel)]="loginPayload.email">
       <span>Senha</span>
-      <input type="password" [(ngModel)]="loginPayload.password">
+      <input #password (keydown.enter)="login()" class="input" type="password" [(ngModel)]="loginPayload.password">
     </div>
 
     <ion-button class="button" [class.disabled]="!canLogin()" (click)="login()">
