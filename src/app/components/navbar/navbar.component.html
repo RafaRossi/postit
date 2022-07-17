@@ -1,5 +1,12 @@
 <div class="navbar">
-  <div class="navbar--item" routerLink="/feed">
+  <ng-container *ngFor="let item of navbarList">
+    <div class ="navbar--item" [routerLink]="item.link">
+      <img [src]="currentNavbar === item.type ? item.iconActivated : item.icon">
+    </div>
+
+  </ng-container>
+
+  <!--<div class="navbar--item" routerLink="/feed">
     <img *ngIf="currentNavbar !== navBarEnum.FEED" src="assets/images/calendar-off.svg">
     <img *ngIf="currentNavbar === navBarEnum.FEED" src="assets/images/calendar-on.svg">
   </div>
@@ -10,5 +17,5 @@
   <div class="navbar--item" routerLink="/profile">
     <img *ngIf="currentNavbar !== navBarEnum.PROFILE" src="assets/images/user-off.svg">
     <img *ngIf="currentNavbar === navBarEnum.PROFILE" src="assets/images/user-on.svg">
-  </div>
+  </div>-->
 </div>
