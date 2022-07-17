@@ -1,0 +1,14 @@
+<div class="navbar">
+  <div class="navbar--item" routerLink="/feed">
+    <img *ngIf="currentNavbar !== navBarEnum.FEED" src="assets/images/calendar-off.svg">
+    <img *ngIf="currentNavbar === navBarEnum.FEED" src="assets/images/calendar-on.svg">
+  </div>
+  <div class="navbar--item" routerLink="/home">
+    <img *ngIf="currentNavbar !== navBarEnum.HOME" src="assets/images/home-off.svg">
+    <img *ngIf="currentNavbar === navBarEnum.HOME" src="assets/images/home-on.svg">
+  </div>
+  <div class="navbar--item" routerLink="/profile">
+    <img *ngIf="currentNavbar !== navBarEnum.PROFILE" src="assets/images/user-off.svg">
+    <img *ngIf="currentNavbar === navBarEnum.PROFILE" src="assets/images/user-on.svg">
+  </div>
+</div>
